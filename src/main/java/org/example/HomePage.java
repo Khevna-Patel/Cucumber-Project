@@ -21,6 +21,7 @@ public class HomePage extends Utils{
         private By _Euro = By.cssSelector("select#customerCurrency");
         private By _facebookButton = By.cssSelector("li.facebook");
         private By _AppleMacBook = By.xpath("//h2[@class='product-title']/a[@href='/apple-macbook-pro-13-inch']");
+        private By _LogIn = By.linkText("Log in");
 
         LoadProperty loadProperty = new LoadProperty();
         SoftAssert softAssert = new SoftAssert();
@@ -109,6 +110,11 @@ public class HomePage extends Utils{
 
         //click on apple MacBook pro
             clickOnElement(_AppleMacBook);
+    }
+
+    public void clickOnLogIn(){
+            //click on log in
+        clickOnElement(_LogIn);
     }
     }
 

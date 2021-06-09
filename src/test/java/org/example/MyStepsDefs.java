@@ -1,5 +1,7 @@
 package org.example;
 
+import cucumber.api.PendingException;
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -18,6 +20,7 @@ public class MyStepsDefs {
     PaymentInformation paymentInformation = new PaymentInformation();
     ConfirmOrderPage confirmOrderPage = new ConfirmOrderPage();
     OrderVerificationPage orderVerificationPage = new OrderVerificationPage();
+    LogInPage logInPage = new LogInPage();
 
 
 //================================================Registration=======================================================
@@ -148,12 +151,35 @@ public class MyStepsDefs {
     }
 
 
+//======================================LogIn===========================================================
 
 
+    @When("^User click on login$")
+    public void userClickOnLogin() {
 
+        homePage.clickOnLogIn();
+    }
 
+    @And("^User type \"([^\"]*)\" and \"([^\"]*)\"$")
+    public void userTypeAnd(String Email, String Password) {
 
+        logInPage.enterLogInDetails(Email,Password);
+    }
 
+    @And("^click on login button$")
+    public void clickOnLoginButton() {
+
+        logInPage.clickOnLogInButton();
+    }
+
+    @Then("^User should not be able to log in$")
+    public void userShouldNotBeAbleToLogIn() {
+    }
+
+    @And("^User should get \"([^\"]*)\"$")
+    public void userShouldGet(String errorMessage) {
+        logInPage.errorMessageVerification(errorMessage);
+    }
 
 }
 

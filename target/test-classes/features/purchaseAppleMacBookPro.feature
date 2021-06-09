@@ -1,5 +1,5 @@
 Feature: Purchase Apple MacBook Pro 13-inch
-@Test
+@Test3
   Scenario: User should be able to purchase Apple MacBook Pro 13-inch successfully
     Given User is registered user of https://demo.nopcommerce.com/
     When User click on Apple MacBook Pro 13-inch

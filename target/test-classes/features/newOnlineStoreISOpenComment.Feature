@@ -1,5 +1,5 @@
 Feature: New online store is open!
-@Test
+@Test2
   Scenario: User should able to add comment successfully in new online store is open
     Given User is on new online store  is open page
     When User type title and comment
