@@ -12,12 +12,14 @@ import java.net.URL;
 
 public class BrowserSelector extends BasePage{
     LoadProperty loadProperty = new LoadProperty();
-    String browserName = loadProperty.getProperty("browser");
+    //String browserName = loadProperty.getProperty("browser");
+    String browserName = System.getProperty("browser1");
 
     public static final String AUTOMATE_USERNAME = "khevnapatel_YWSgFJ";
     public static final String AUTOMATE_ACCESS_KEY = "dDxxwEKH2zXybDL1e2Ju";
     public static final String URL = "https://" + AUTOMATE_USERNAME + ":" + AUTOMATE_ACCESS_KEY + "@hub-cloud.browserstack.com/wd/hub";
-    public static final boolean browserStack = false;
+   // public static final boolean browserStack = false;
+    public static final boolean browserStack = Boolean.parseBoolean(System.getProperty("browserStack"));
 
     DesiredCapabilities caps = new DesiredCapabilities();
 
@@ -35,10 +37,10 @@ public class BrowserSelector extends BasePage{
             } else if (browserName.equalsIgnoreCase("edge")) {
                 caps.setCapability("os", "Windows");
                 caps.setCapability("os_version", "10");
-                caps.setCapability("browser", "Chrome");
+                caps.setCapability("browser", "Edge");
                 caps.setCapability("browser_version", "latest");
                 caps.setCapability("browserstack.local", "false");
-                caps.setCapability("browserstack.selenium_version", "3.14.0");
+                caps.setCapability("browserstack.selenium_version", "3.5.2");
 
             } else if (browserName.equalsIgnoreCase("firefox")) {
                 caps.setCapability("os", "Windows");

@@ -1,7 +1,7 @@
 Feature: Log in
 Background:
   Given User is on homepage
-  @login
+  @login @reg
   Scenario Outline: User should not be able to log in successfully with invalid credentials
     When User click on login
     And User type "<Email>" and "<Password>"

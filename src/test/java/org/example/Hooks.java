@@ -21,7 +21,9 @@ public class Hooks extends Utils{
 
     @Before
     public void openBrowser(){
+        //open browser
         browserSelector.openBrowser();
+        //open url
         driver.get("https://demo.nopcommerce.com/");
     }
 

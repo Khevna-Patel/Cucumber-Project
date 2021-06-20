@@ -87,7 +87,7 @@ public class MyStepsDefs {
     public void user_should_able_to_see_comment_added_in_comment_box() {
         newOnlineStoreIsOpenPage.verifyUserShouldSeeSuccessMessage();
        // newOnlineStoreIsOpenPage.verifyCommentIsPresentInTheCommentList();
-        newOnlineStoreIsOpenPage.verifyAddedCommentIsAtLastInTheList();
+        //newOnlineStoreIsOpenPage.verifyAddedCommentIsAtLastInTheList();
 
     }
 

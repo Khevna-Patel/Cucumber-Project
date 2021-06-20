@@ -14,7 +14,8 @@ public class NewOnlineStoreIsOpenPage extends Utils {
     private By _comments = By.cssSelector("textarea#AddNewComment_CommentText");
     private By _newCommentButton = By.xpath("//button[@name='add-comment']");
     private By _wait = By.xpath("//button[contains(@class,'button-1 news-item-add-comment-button')]");
-    private By _commentSuccessMessage = By.xpath("//div[starts-with(@class,'result')]");
+   // private By _commentSuccessMessage = By.xpath("//div[starts-with(@class,'result')]");
+    private By _commentSuccessMessage =By.xpath("//div[@class='result']");
     private By _commentBox = By.xpath("//div[@class='comment news-comment']");
 
     //test data used

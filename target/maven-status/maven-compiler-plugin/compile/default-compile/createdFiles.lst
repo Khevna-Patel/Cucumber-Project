@@ -1,0 +1,17 @@
+org\example\BrowserSelector.class
+org\example\BasePage.class
+org\example\PaymentMethod.class
+org\example\ResultVerificationPage.class
+org\example\NewOnlineStoreIsOpenPage.class
+org\example\ConfirmOrderPage.class
+org\example\HomePage.class
+org\example\CheckoutPage.class
+org\example\LoadProperty.class
+org\example\ShoppingCartPage.class
+org\example\LogInPage.class
+org\example\RegisterPage.class
+org\example\Utils.class
+org\example\AppleMacBookProPAge.class
+org\example\PaymentInformation.class
+org\example\ShippingMethod.class
+org\example\OrderVerificationPage.class
